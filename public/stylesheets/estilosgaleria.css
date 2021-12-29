@@ -1,0 +1,45 @@
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    h1 {
+                        color: #000;
+                        text-align: center;
+                        font: italic;
+                    }
+                    
+                    .img-column {
+                        width: 100%;
+                    }
+                    
+                    .row {
+                        display: flex;
+                        padding: 5px;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .column {
+                        flex: 25%;
+                        padding: 5px;
+                    }
+                    
+                    .column img {
+                        margin-top: 5px;
+                    }
+                    
+                    @media (max-widht: 800px) {
+                        .column {
+                            flex: 50%;
+                        }
+                    }
+                    
+                    @media (max-widht: 600px) {
+                        .column {
+                            flex: 100%;
+                        }
+                    }

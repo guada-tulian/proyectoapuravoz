@@ -1,0 +1,54 @@
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 25px;
+}
+.texto h1 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 03px 4px rgb(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 03px 4px rgb(0, 0, 0, 0.5);
+}
+
+#intro {
+    background: url(images/home/microfono.jpg)50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#bloque-img2 {
+    background: url(images/home/guitarra.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#bloque-img3 {
+    background: url(images/home/partitura.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

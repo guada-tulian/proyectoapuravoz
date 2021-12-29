@@ -1,0 +1,39 @@
+                * {
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    background-color: black;
+                    color: white;
+                    align-items: center;
+                }
+                
+                #contitemscarrusel {
+                    height: 600px;
+                    overflow: hidden;
+                    width: 900px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .itemcarrusel {
+                    height: 100%;
+                    position: relative;
+                }
+                
+                .tarjetacarrusel {
+                    height: 100%;
+                }
+                
+                .flechascarrusel {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+                }
