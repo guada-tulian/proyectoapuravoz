@@ -2,7 +2,7 @@
  <link rel="stylesheet" href="stylesheets/estiloscontacto.css">
  <link rel="stylesheet" href="stylesheets/estilos.css">
  <body>
-<section action="/contacto" method="post" class="form-register" >
+<section action="./contacto" method="post" class="form-register" >
             <h4>FORMULARIO DE CONTACTO</h4>
             
             
@@ -13,6 +13,10 @@
 
             <textarea class="controls" name="comentarios">
                 </textarea>
-            <input class="enviar" type="submit" value="ENVIAR">
+            
+            <form action=" " metodh="post">
+                <input class="enviar" type="submit" value="ENVIAR">
+            </form>
         </section>
+       <p>{{message}}</p>
 </body>

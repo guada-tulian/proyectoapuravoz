@@ -1,0 +1,13 @@
+body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 25px;
+}
+
+
+.container{
+    margin:100px auto;
+}

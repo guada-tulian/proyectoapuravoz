@@ -4,12 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
 var indexRouter = require('./routes/index');
 var novedadesRouter = require('./routes/novedades');
 var galeriaRouter = require('./routes/galeria');
 var presentacionesRouter = require('./routes/presentaciones');
 var contactoRouter = require('./routes/contacto');
-
+var loginRouter =require('./routes/admin');
 var app = express();
 
 // view engine setup
@@ -23,21 +25,23 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use ('/novedades', novedadesRouter);
-app.use ('/galeria', galeriaRouter);
-app.use ('/presentaciones', presentacionesRouter);
-app.use ('/contacto', contactoRouter);
+app.use('/novedades', novedadesRouter);
+app.use('/galeria', galeriaRouter);
+app.use('/presentaciones', presentacionesRouter);
+app.use('/contacto', contactoRouter);
+app.use('/admin/login', loginRouter);
+
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = req.app.get('env') == 'development' ? err : {};
 
   // render the error page
   res.status(err.status || 500);
