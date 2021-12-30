@@ -11,7 +11,7 @@ var novedadesRouter = require('./routes/novedades');
 var galeriaRouter = require('./routes/galeria');
 var presentacionesRouter = require('./routes/presentaciones');
 var contactoRouter = require('./routes/contacto');
-var loginRouter =require('./routes/admin');
+var loginRouter =require('./routes/admin/login');
 var app = express();
 
 // view engine setup
